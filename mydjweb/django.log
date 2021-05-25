@@ -294,3 +294,247 @@ requw 데이 <QueryDict: {'csrfmiddlewaretoken': ['qbujFmRkVK69Bh72F3r02R5SdcTwn
 [pid: 3126|app: 0|req: 18/18] 110.70.58.200 () {52 vars in 1084 bytes} [Mon May 24 23:08:51 2021] POST / => generated 81129 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
 requw 데이 <QueryDict: {'csrfmiddlewaretoken': ['qbujFmRkVK69Bh72F3r02R5SdcTwnnukZhN5gau4gil0QjBNJRmFGs4sE79vheym'], 'name': ['asd'], 'price': ['0'], 'cafe_id': ['0'], 'create': ['확인']}>
 [pid: 3126|app: 0|req: 19/19] 110.70.58.200 () {52 vars in 1084 bytes} [Mon May 24 23:14:22 2021] POST / => generated 81129 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue May 25 00:14:03 2021] ***
+compiled with version: 7.5.0 on 24 May 2021 22:26:27
+os: Linux-5.4.0-1048-aws #50~18.04.1-Ubuntu SMP Tue May 4 17:40:02 UTC 2021
+nodename: ip-172-31-38-43
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Desktop/mydjweb
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/Desktop/venv/bin/uwsgi
+chdir() to /home/ubuntu/Desktop/mydjweb
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Desktop/mydjweb/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/Desktop/venv
+Set PythonHome to /home/ubuntu/Desktop/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556808cced20
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556808cced20 pid: 2883 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2883)
+spawned uWSGI worker 1 (pid: 2885, cores: 1)
+Unnamed: 0     0
+country        0
+description    0
+designation    0
+points         0
+price          0
+province       0
+region_1       0
+region_2       0
+variety        0
+winery         0
+dtype: int64
+Tue May 25 00:14:24 2021 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 110.70.58.200) !!!
+Tue May 25 00:14:24 2021 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (110.70.58.200)
+OSError: write error
+[pid: 2885|app: 0|req: 1/1] 110.70.58.200 () {44 vars in 895 bytes} [Tue May 25 00:14:17 2021] GET / => generated 0 bytes in 6936 msecs (HTTP/1.1 200) 7 headers in 0 bytes (0 switches on core 0)
+Tue May 25 00:14:24 2021 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 110.70.58.200) !!!
+Tue May 25 00:14:24 2021 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (110.70.58.200)
+OSError: write error
+[pid: 2885|app: 0|req: 2/2] 110.70.58.200 () {44 vars in 895 bytes} [Tue May 25 00:14:24 2021] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 0 bytes (0 switches on core 0)
+[pid: 2885|app: 0|req: 3/3] 110.70.58.200 () {44 vars in 895 bytes} [Tue May 25 00:14:24 2021] GET / => generated 81122 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 2885|app: 0|req: 4/4] 110.70.58.200 () {44 vars in 895 bytes} [Tue May 25 00:14:32 2021] GET / => generated 81122 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+Tue May 25 00:58:58 2021 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 128.14.209.162) !!!
+Tue May 25 00:58:59 2021 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (128.14.209.162)
+OSError: write error
+[pid: 2885|app: 0|req: 5/5] 128.14.209.162 () {34 vars in 468 bytes} [Tue May 25 00:35:09 2021] GET / => generated 0 bytes in 1432679 msecs (HTTP/1.1 200) 7 headers in 0 bytes (1 switches on core 0)
+[pid: 2885|app: 0|req: 6/6] 168.126.77.221 () {40 vars in 711 bytes} [Tue May 25 01:04:14 2021] GET / => generated 81122 bytes in 13633 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/Desktop/mydjweb
+closing all non-uwsgi socket fds > 2 (max_fd = 8192)...
+found fd 3 mapped to socket 0 (/home/ubuntu/Desktop/mydjweb/uwsgi.sock)
+running /home/ubuntu/Desktop/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue May 25 06:41:04 2021] ***
+compiled with version: 7.5.0 on 24 May 2021 22:26:27
+os: Linux-5.4.0-1048-aws #50~18.04.1-Ubuntu SMP Tue May 4 17:40:02 UTC 2021
+nodename: ip-172-31-38-43
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Desktop/mydjweb
+detected binary path: /home/ubuntu/Desktop/venv/bin/uwsgi
+chdir() to /home/ubuntu/Desktop/mydjweb
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /home/ubuntu/Desktop/mydjweb/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/Desktop/venv
+Set PythonHome to /home/ubuntu/Desktop/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ffa9aa6a50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ffa9aa6a50 pid: 2883 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2883)
+spawned uWSGI worker 1 (pid: 5934, cores: 1)
+Tue May 25 06:42:33 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue May 25 06:47:03 2021] ***
+compiled with version: 7.5.0 on 24 May 2021 22:26:27
+os: Linux-5.4.0-1048-aws #50~18.04.1-Ubuntu SMP Tue May 4 17:40:02 UTC 2021
+nodename: ip-172-31-38-43
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Desktop/mydjweb
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/Desktop/mydjweb
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Desktop/mydjweb/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/Desktop/venv
+Set PythonHome to /home/ubuntu/Desktop/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560be5759c10
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560be5759c10 pid: 1792 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1792)
+spawned uWSGI worker 1 (pid: 1796, cores: 1)
+Unnamed: 0     0
+country        0
+description    0
+designation    0
+points         0
+price          0
+province       0
+region_1       0
+region_2       0
+variety        0
+winery         0
+dtype: int64
+[pid: 1796|app: 0|req: 1/1] 39.7.58.249 () {44 vars in 893 bytes} [Tue May 25 06:47:16 2021] GET / => generated 81122 bytes in 8163 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 1796|app: 0|req: 2/2] 110.137.45.10 () {32 vars in 444 bytes} [Tue May 25 06:54:18 2021] GET / => generated 81122 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 1796|app: 0|req: 3/3] 39.7.58.249 () {42 vars in 862 bytes} [Tue May 25 07:10:20 2021] GET / => generated 81122 bytes in 77 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 1796|app: 0|req: 4/4] 39.7.58.249 () {44 vars in 893 bytes} [Tue May 25 07:10:51 2021] GET / => generated 81122 bytes in 20 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue May 25 07:12:35 2021] ***
+compiled with version: 7.5.0 on 24 May 2021 22:26:27
+os: Linux-5.4.0-1048-aws #50~18.04.1-Ubuntu SMP Tue May 4 17:40:02 UTC 2021
+nodename: ip-172-31-38-43
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Desktop/mydjweb
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/Desktop/mydjweb
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Desktop/mydjweb/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/Desktop/venv
+Set PythonHome to /home/ubuntu/Desktop/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5623eb472c10
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5623eb472c10 pid: 2235 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2235)
+spawned uWSGI worker 1 (pid: 2237, cores: 1)
+Unnamed: 0     0
+country        0
+description    0
+designation    0
+points         0
+price          0
+province       0
+region_1       0
+region_2       0
+variety        0
+winery         0
+dtype: int64
+[pid: 2237|app: 0|req: 1/1] 39.7.58.249 () {44 vars in 893 bytes} [Tue May 25 07:12:48 2021] GET / => generated 81122 bytes in 8044 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 2237|app: 0|req: 2/2] 41.72.214.14 () {32 vars in 449 bytes} [Tue May 25 07:17:01 2021] GET / => generated 81122 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '_'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[pid: 2237|app: 0|req: 3/3] 104.152.52.34 () {30 vars in 356 bytes} [Tue May 25 07:17:47 2021] GET / => generated 56790 bytes in 60 msecs (HTTP/1.0 400) 3 headers in 116 bytes (1 switches on core 0)
+[pid: 2237|app: 0|req: 4/4] 103.70.144.246 () {32 vars in 444 bytes} [Tue May 25 07:21:47 2021] GET / => generated 81122 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue May 25 08:09:41 2021] ***
+compiled with version: 7.5.0 on 24 May 2021 22:26:27
+os: Linux-5.4.0-1048-aws #50~18.04.1-Ubuntu SMP Tue May 4 17:40:02 UTC 2021
+nodename: ip-172-31-38-43
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/Desktop/mydjweb
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Desktop/mydjweb/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/Desktop/venv
+Set PythonHome to /home/ubuntu/Desktop/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f30f7b08e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f30f7b08e0 pid: 2554 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2554)
+spawned uWSGI worker 1 (pid: 2556, cores: 1)
+Unnamed: 0     0
+country        0
+description    0
+designation    0
+points         0
+price          0
+province       0
+region_1       0
+region_2       0
+variety        0
+winery         0
+dtype: int64
+[pid: 2556|app: 0|req: 1/1] 39.7.58.249 () {44 vars in 893 bytes} [Tue May 25 08:09:48 2021] GET / => generated 81122 bytes in 9890 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+SIGINT/SIGQUIT received...killing workers...
+Tue May 25 08:10:14 2021 - received message 0 from emperor
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ubuntu/Desktop/mydjweb/uwsgi.sock removed.
